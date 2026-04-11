@@ -1,0 +1,277 @@
+.hero {
+  padding-top: 78px;
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding-top: 186px;
+}
+
+.hero__title {
+  max-width: 555px;
+  margin-bottom: 23px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 61px;
+}
+
+.hero__text {
+  max-width: 746px;
+  margin-bottom: 68px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 259px;
+  height: 63px;
+  padding: 12px 67px 12px 66px;
+  border-radius: 36px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.hero__button--primary {
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(90deg, rgba(103, 166, 251, 1), rgba(63, 16, 210, 1) 100%);
+}
+
+.hero__button--secondary {
+  color: rgba(16, 81, 210, 1);
+  background: rgba(255, 255, 255, 1);
+}
+
+.hero__image {
+  position: absolute;
+  top: -191px;
+  right: -184px;
+}
+
+.hero__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1440px) {
+  .hero__container {
+    width: min(100% - 40px, 1320px);
+  }
+
+  .hero__content {
+    padding-top: 150px;
+  }
+
+  .hero__title {
+    width: auto;
+    max-width: 520px;
+    height: auto;
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  .hero__text {
+    width: auto;
+    max-width: 620px;
+    height: auto;
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .hero__image {
+    top: -110px;
+    right: -120px;
+    width: 860px;
+    height: 860px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding-top: 66px;
+  }
+
+  .hero__container {
+    width: min(100% - 40px, 1100px);
+  }
+
+  .hero__content {
+    padding-top: 110px;
+    max-width: 470px;
+  }
+
+  .hero__title {
+    max-width: 460px;
+    font-size: 38px;
+    line-height: 47px;
+  }
+
+  .hero__text {
+    max-width: 520px;
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .hero__actions {
+    gap: 12px;
+  }
+
+  .hero__button {
+    width: 220px;
+    height: 56px;
+    padding: 12px 32px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .hero__image {
+    top: -70px;
+    right: -80px;
+    width: 620px;
+    height: 620px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding-top: 55px;
+  }
+
+  .hero__container {
+    width: min(100% - 32px, 900px);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__content {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .hero__title {
+    max-width: 620px;
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .hero__text {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .hero__image {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 49px;
+  }
+
+  .hero__container {
+    width: min(100% - 24px, 100%);
+  }
+
+  .hero__title {
+    max-width: 100%;
+    font-size: 30px;
+    line-height: 38px;
+    white-space: normal;
+  }
+
+  .hero__text {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__button {
+    width: 100%;
+    max-width: 320px;
+    height: 54px;
+    padding: 12px 24px;
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .hero__image {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 49px;
+  }
+
+  .hero__container {
+    display: flex;
+    flex-direction: row;
+    width: min(100% - 40px, 100%);
+  }
+
+  .hero__content {
+    max-width: 236px;
+  }
+
+  .hero__title {
+    max-width: 216px;
+    margin-bottom: 26px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+  }
+
+  .hero__text {
+    max-width: 236px;
+    margin-bottom: 31px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .hero__actions {
+    gap: 14px;
+  }
+
+  .hero__button {
+    width: 189px;
+    max-width: 189px;
+    height: 45.97px;
+    padding: 8.76px 48.89px 8.76px 48.16px;
+    border-radius: 26.27px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

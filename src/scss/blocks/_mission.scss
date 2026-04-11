@@ -1,0 +1,130 @@
+.mission {
+  padding-top: 303px;
+}
+
+.mission__container {
+  width: min(100% - 40px, 1416px);
+  margin: 0 auto;
+}
+
+.mission__box {
+  box-sizing: border-box;
+  width: 1416px;
+  max-width: 100%;
+  min-height: 350px;
+  padding: 50px 63px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 43px;
+}
+
+.mission__title {
+  margin-bottom: 39px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 49px;
+}
+
+.mission__label {
+  margin-bottom: 19px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.mission__text {
+  width: 1143px;
+  max-width: 100%;
+  color: rgba(255, 255, 255, 1);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+@media (max-width: 1200px) {
+  .mission {
+    padding-top: 150px;
+  }
+  .mission__box {
+    min-height: auto;
+    padding: 40px 36px;
+  }
+
+  .mission__title {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .mission__label,
+  .mission__text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission {
+    padding-top: 48px;
+  }
+
+  .mission__container {
+    width: min(100% - 24px, 100%);
+  }
+
+  .mission__box {
+    padding: 28px 24px;
+    border-radius: 28px;
+  }
+
+  .mission__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .mission__label,
+  .mission__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission {
+    padding-top: 90px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .mission__container {
+    width: 100%;
+  }
+
+  .mission__box {
+    padding: 44px 37px 44px 28px;
+    border-radius: 24px;
+  }
+
+  .mission__title {
+    margin-bottom: 34px;
+    max-width: 255px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+  }
+
+  .mission__label {
+    margin-bottom: 34px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .mission__text {
+    max-width: 254px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0%;
+  }
+}
