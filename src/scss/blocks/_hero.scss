@@ -52,6 +52,7 @@
   font-weight: 400;
   line-height: 24px;
   white-space: nowrap;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .hero__button--primary {
@@ -59,9 +60,40 @@
   background: linear-gradient(90deg, rgba(103, 166, 251, 1), rgba(63, 16, 210, 1) 100%);
 }
 
+.hero__button--primary:hover {
+  background: linear-gradient(90deg, rgba(103, 166, 251, 1), rgba(255, 162, 244, 1) 100%);
+}
+
+.hero__button--primary:active,
+.hero__button--primary.hero__button--active {
+  background: rgba(63, 16, 210, 1);
+}
+
+.hero__button--primary.hero__button--disabled {
+  background: rgba(73, 73, 73, 1);
+  pointer-events: none;
+}
+
 .hero__button--secondary {
   color: rgba(16, 81, 210, 1);
   background: rgba(255, 255, 255, 1);
+}
+
+.hero__button--secondary:hover {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(103, 166, 251, 1);
+}
+
+.hero__button--secondary:active,
+.hero__button--secondary.hero__button--active {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(63, 16, 210, 1);
+}
+
+.hero__button--secondary.hero__button--disabled {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(73, 73, 73, 1);
+  pointer-events: none;
 }
 
 .hero__image {

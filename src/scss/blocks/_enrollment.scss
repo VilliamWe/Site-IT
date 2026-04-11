@@ -1,0 +1,530 @@
+.enrollment {
+  padding-top: clamp(48px, 6vw, 90px);
+  padding-bottom: clamp(48px, 6vw, 90px);
+}
+
+.enrollment__container {
+  position: relative;
+}
+
+.enrollment__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(22px, 4vw, 58px);
+}
+
+.enrollment__label {
+  font-size: clamp(14px, 1.8vw, 26px);
+  font-weight: 500;
+  line-height: 1.23;
+}
+
+.enrollment__more {
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: clamp(14px, 1.4vw, 20px);
+  font-weight: 500;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.enrollment__more:hover {
+  color: #67a6fb;
+}
+
+.enrollment__layout {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: clamp(16px, 2vw, 25px);
+}
+
+.enrollment__content {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 1.6vw, 23px);
+  width: 775px;
+}
+
+.enrollment__card {
+  box-sizing: border-box;
+  width: 775px;
+  height: 370px;
+  padding: 75px 109px 61px 61px;
+  border: 1px solid #ffffff;
+  border-radius: 43px;
+  background: #1e1e1e;
+}
+
+.enrollment__title {
+  width: 411px;
+  margin-bottom: 18px;
+  font-size: clamp(24px, 2.8vw, 40px);
+  font-weight: 600;
+  line-height: 1.225;
+}
+
+.enrollment__text {
+  width: 605px;
+  margin-bottom: 42px;
+  font-size: clamp(18px, 1.5vw, 22px);
+  font-weight: 600;
+  line-height: 1.23;
+}
+
+.enrollment__contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 296px;
+  height: 85px;
+  border: 1px solid #ffffff;
+  border-radius: 43px;
+  background: linear-gradient(90deg, #67a6fb 0%, #ffa2f4 100%);
+  color: #ffffff;
+  font-size: clamp(18px, 1.5vw, 22px);
+  font-weight: 500;
+  line-height: 1.23;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.enrollment__contact:hover {
+  background: linear-gradient(90deg, #67a6fb 0%, #3f10d2 100%);
+}
+
+.enrollment__contact:active {
+  background: #3f10d2;
+}
+
+.enrollment__contact--disabled,
+.enrollment__contact--disabled:hover,
+.enrollment__contact--disabled:active {
+  background: #494949;
+  pointer-events: none;
+}
+
+.enrollment__view {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 775px;
+  height: 129px;
+  padding: 40px 43px 40px 64px;
+  border: 1px solid #ffffff;
+  border-radius: 43px;
+  background: #67a6fb;
+  color: #ffffff;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.enrollment__view-text {
+  width: 381px;
+  font-size: clamp(18px, 2.8vw, 40px);
+  font-weight: 600;
+  line-height: 1.225;
+}
+
+.enrollment__view-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 45px;
+  flex-shrink: 0;
+}
+
+.enrollment__view-icon img {
+  display: block;
+  width: 49px;
+  height: 45px;
+}
+
+.enrollment__view:hover {
+  background: linear-gradient(90deg, #67a6fb 0%, #3f10d2 100%);
+}
+
+.enrollment__view:active {
+  background: linear-gradient(90deg, #67a6fb 0%, #ffa2f4 100%);
+}
+
+.enrollment__view--disabled,
+.enrollment__view--disabled:hover,
+.enrollment__view--disabled:active {
+  background: #494949;
+  pointer-events: none;
+}
+
+.enrollment__visual {
+  position: relative;
+  width: 614px;
+  height: 646px;
+  overflow: visible;
+}
+
+.enrollment__visual-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 614px;
+  height: 646px;
+  border-radius: 43px;
+  background: linear-gradient(90deg, #67a6fb 0%, #ffa2f4 100%);
+}
+
+.enrollment__phone {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 568px;
+  height: 784px;
+  max-width: none;
+  transform: translateX(-43%);
+}
+
+@media (max-width: 1440px) {
+  .enrollment__layout {
+    gap: 20px;
+  }
+
+  .enrollment__content {
+    width: min(100%, 700px);
+  }
+
+  .enrollment__card,
+  .enrollment__view {
+    width: 100%;
+  }
+
+  .enrollment__visual {
+    width: 520px;
+    height: 620px;
+  }
+
+  .enrollment__visual-bg {
+    width: 520px;
+    height: 620px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .enrollment {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .enrollment__head {
+    margin-bottom: 40px;
+  }
+
+  .enrollment__label,
+  .enrollment__more {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .enrollment__layout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .enrollment__visual {
+    order: -1;
+  }
+
+  .enrollment__content {
+    width: 100%;
+  }
+
+  .enrollment__card {
+    height: auto;
+    padding: 52px 44px 48px;
+  }
+
+  .enrollment__title {
+    width: auto;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .enrollment__text {
+    width: auto;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .enrollment__view {
+    height: 120px;
+    padding: 34px 36px 34px 42px;
+  }
+
+  .enrollment__view-text {
+    width: auto;
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .enrollment__visual {
+    width: 100%;
+    height: 560px;
+  }
+
+  .enrollment__visual-bg {
+    width: 100%;
+    height: 560px;
+  }
+}
+
+@media (max-width: 768px) {
+  .enrollment {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .enrollment__head {
+    margin-bottom: 28px;
+  }
+
+  .enrollment__label,
+  .enrollment__more {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .enrollment__content {
+    gap: 18px;
+  }
+
+  .enrollment__card {
+    padding: 38px 28px 34px;
+    border-radius: 30px;
+  }
+
+  .enrollment__title {
+    margin-bottom: 14px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .enrollment__text {
+    margin-bottom: 28px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .enrollment__contact {
+    width: 240px;
+    height: 68px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .enrollment__view {
+    height: 104px;
+    padding: 28px 28px 28px 34px;
+    border-radius: 30px;
+  }
+
+  .enrollment__view-text {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .enrollment__view-icon,
+  .enrollment__view-icon img {
+    width: 40px;
+    height: 37px;
+  }
+
+  .enrollment__visual {
+    height: 460px;
+  }
+
+  .enrollment__visual-bg {
+    width: 100%;
+    height: 460px;
+    border-radius: 30px;
+  }
+
+  .enrollment__phone {
+    width: 470px;
+    height: auto;
+    transform: translateX(-44%);
+  }
+}
+
+@media (max-width: 480px) {
+  .enrollment {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .enrollment__head {
+    margin-bottom: 22px;
+  }
+
+  .enrollment__label,
+  .enrollment__more {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .enrollment__content {
+    gap: 14px;
+  }
+
+  .enrollment__card {
+    padding: 28px 18px 24px;
+    border-radius: 22px;
+  }
+
+  .enrollment__title {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .enrollment__text {
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .enrollment__contact {
+    width: 190px;
+    height: 52px;
+    border-radius: 26px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .enrollment__view {
+    height: 82px;
+    padding: 22px 18px 22px 24px;
+    border-radius: 22px;
+  }
+
+  .enrollment__view-text {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .enrollment__view-icon,
+  .enrollment__view-icon img {
+    width: 32px;
+    height: 30px;
+  }
+
+  .enrollment__visual {
+    height: 320px;
+  }
+
+  .enrollment__visual-bg {
+    width: 100%;
+    height: 320px;
+    border-radius: 22px;
+  }
+
+  .enrollment__phone {
+    width: 320px;
+    transform: translateX(-45%);
+  }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .enrollment {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .enrollment__head {
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .enrollment__label {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .enrollment__more {
+    display: none;
+  }
+
+  .enrollment__layout {
+    gap: 20px;
+  }
+
+  .enrollment__visual {
+    width: 316px;
+    height: 315px;
+  }
+
+  .enrollment__visual-bg {
+    width: 316px;
+    height: 315px;
+    border-radius: 43px;
+  }
+
+  .enrollment__phone {
+    width: 258px;
+    left: 49%;
+    transform: translateX(-50%);
+  }
+
+  .enrollment__content {
+    gap: 20px;
+    width: 319px;
+  }
+
+  .enrollment__card {
+    width: 319px;
+    height: 317px;
+    padding: 47px 22px 47px 23px;
+    border-radius: 43px;
+  }
+
+  .enrollment__title {
+    width: 247px;
+    margin-bottom: 26px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .enrollment__text {
+    width: 269px;
+    margin-bottom: 26px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .enrollment__contact {
+    width: 240px;
+    height: 54px;
+    border-radius: 43px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .enrollment__view {
+    width: 319px;
+    height: 53px;
+    padding: 15px 22px 16px 23px;
+    border-radius: 17.7px;
+  }
+
+  .enrollment__view-text {
+    width: 149px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .enrollment__view-icon {
+    display: none;
+  }
+}
