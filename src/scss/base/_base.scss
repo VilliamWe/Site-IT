@@ -1,0 +1,19 @@
+:root {
+  --color-background: #1f1f1f;
+  --color-text: #ffffff;
+  --color-border: rgba(255, 255, 255, 0.65);
+  --container-width: 1042px;
+  --container-padding: 20px;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.container {
+  width: min(100% - (var(--container-padding) * 2), var(--container-width));
+  margin-inline: auto;
+}

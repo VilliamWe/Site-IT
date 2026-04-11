@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Учебный проект по верстке." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <title>IT</title>
+</head>
+
+<body>
+  <div id="app">
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="/">
+          <img class="header__logo-image" src="/images/logo.png" alt="Logo" />
+        </a>
+
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Courses</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Certificate</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">News</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact us</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--call" href="tel:+70000000000">Call us</a></li>
+          </ul>
+
+          <div class="header__mobile-extra">
+            <div class="header__socials">
+              <a class="header__social header__social--filled" href="#" aria-label="Facebook">F</a>
+              <a class="header__social" href="#" aria-label="Instagram">I</a>
+              <a class="header__social" href="#" aria-label="Instagram">I</a>
+            </div>
+
+            <a class="header__policy" href="#">Политика конфиденциальности</a>
+          </div>
+        </nav>
+
+        <a class="header__button" href="tel:+70000000000">Call us</a>
+        
+        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
