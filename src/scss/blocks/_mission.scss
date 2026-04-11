@@ -1,13 +1,19 @@
 .mission {
+  position: relative;
+  z-index: 1;
   padding-top: 303px;
 }
 
 .mission__container {
+  position: relative;
+  z-index: 1;
   width: min(100% - 40px, 1416px);
   margin: 0 auto;
 }
 
 .mission__box {
+  position: relative;
+  z-index: 1;
   box-sizing: border-box;
   width: 1416px;
   max-width: 100%;
