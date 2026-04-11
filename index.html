@@ -21,11 +21,11 @@
 
         <nav class="nav header__nav">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Courses</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Certificate</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">News</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Contact us</a></li>
+            <li class="nav__item"><a class="nav__link" href="#about">About us</a></li>
+            <li class="nav__item"><a class="nav__link" href="#courses">Courses</a></li>
+            <li class="nav__item"><a class="nav__link" href="#certificate">Certificate</a></li>
+            <li class="nav__item"><a class="nav__link" href="#news">News</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contact">Contact us</a></li>
             <li class="nav__item"><a class="nav__link nav__link--call" href="tel:+70000000000">Call us</a></li>
           </ul>
 
@@ -53,7 +53,7 @@
     <main class="main">
       <div class="main__glow" aria-hidden="true"></div>
 
-      <section class="hero">
+      <section class="hero" id="about">
         <div class="container hero__container">
           <div class="hero__content">
             <h1 class="hero__title">Start Your Career in IT Today</h1>
@@ -65,8 +65,8 @@
             </p>
 
             <div class="hero__actions">
-              <a class="hero__button hero__button--primary" href="#">About more</a>
-              <a class="hero__button hero__button--secondary" href="#">Choose a Course</a>
+              <a class="hero__button hero__button--primary" href="#contact">About more</a>
+              <a class="hero__button hero__button--secondary" href="#courses">Choose a Course</a>
             </div>
           </div>
 
@@ -96,7 +96,7 @@
         </div>
       </section>
 
-      <section class="courses">
+      <section class="courses" id="courses">
         <div class="container courses__container">
           <div class="courses__watermark" aria-hidden="true">
             <span class="courses__watermark-top">COURSES</span>
@@ -150,7 +150,6 @@
                 <a class="course-card__link" href="#">Read more</a>
               </article>
             </div>
-
           </div>
 
           <div class="courses__pagination" aria-label="Courses pagination">
@@ -162,7 +161,7 @@
         </div>
       </section>
 
-      <section class="enrollment">
+      <section class="enrollment" id="contact">
         <div class="container enrollment__container">
           <div class="enrollment__head">
             <span class="enrollment__label">Enrollment</span>
@@ -177,10 +176,10 @@
                   Leave a request and we will help you choose the right course
                   and guide you through the details
                 </p>
-                <a class="enrollment__contact" href="#">Contact us</a>
+                <a class="enrollment__contact" href="tel:+70000000000">Contact us</a>
               </article>
 
-              <a class="enrollment__view" href="#">
+              <a class="enrollment__view" href="#courses">
                 <span class="enrollment__view-text">View all courses</span>
                 <span class="enrollment__view-icon" aria-hidden="true">
                   <img src="/images/enroll-right.png" alt="" />
@@ -196,7 +195,7 @@
         </div>
       </section>
 
-      <section class="certificate">
+      <section class="certificate" id="certificate">
         <div class="container certificate__container">
           <div class="certificate__head">
             <span class="certificate__label">Certificate</span>
@@ -233,7 +232,8 @@
           </div>
         </div>
       </section>
-      <section class="news">
+
+      <section class="news" id="news">
         <div class="news__glow" aria-hidden="true"></div>
         <div class="container news__container">
           <div class="news__head">
@@ -241,41 +241,40 @@
             <a class="news__more" href="#">Read more</a>
           </div>
 
-            <div class="news__body">
-              <div class="news__watermark" aria-hidden="true">
-                <span class="news__watermark-top">NEWS</span>
-                <span class="news__watermark-bottom">NEWS</span>
-              </div>
+          <div class="news__body">
+            <div class="news__watermark" aria-hidden="true">
+              <span class="news__watermark-top">NEWS</span>
+              <span class="news__watermark-bottom">NEWS</span>
+            </div>
 
-              <div class="news__content">
-                <h2 class="news__title">IT Courses</h2>
-                <p class="news__text">
-                  Validate your skills with an official certificate after completing the
-                  course.Validate your skills with an official certificate after
+            <div class="news__content">
+              <h2 class="news__title">IT Courses</h2>
+              <p class="news__text">
+                Validate your skills with an official certificate after completing the
+                course.Validate your skills with an official certificate after
                 completing the courseValidate your skills with an official certificate
                 after completing the course Validate your skills with an official
                 certificate after completing the course
               </p>
 
-                <a class="news__button" href="#">Read more</a>
-              </div>
-
-              <div class="news__visual">
-                <button class="news__arrow news__arrow--left" type="button" aria-label="Previous news">
-                  <span class="news__arrow-icon" aria-hidden="true"></span>
-                </button>
-
-                <img class="news__image" src="/images/news.png" alt="Students studying together" />
-
-                <button class="news__arrow news__arrow--right" type="button" aria-label="Next news">
-                  <span class="news__arrow-icon" aria-hidden="true"></span>
-                </button>
-              </div>
+              <a class="news__button" href="#">Read more</a>
             </div>
+
+            <div class="news__visual">
+              <button class="news__arrow news__arrow--left" type="button" aria-label="Previous news">
+                <span class="news__arrow-icon" aria-hidden="true"></span>
+              </button>
+
+              <img class="news__image" src="/images/news.png" alt="Students studying together" />
+
+              <button class="news__arrow news__arrow--right" type="button" aria-label="Next news">
+                <span class="news__arrow-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-
   </div>
 
   <script type="module" src="/src/js/main.js"></script>

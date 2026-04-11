@@ -1,0 +1,50 @@
+.courses__label,
+.enrollment__label,
+.certificate__label,
+.news__label {
+  font-size: clamp(14px, 1.8vw, 26px);
+  font-weight: 500;
+  line-height: 1.23;
+}
+
+.courses__more,
+.enrollment__more,
+.certificate__more,
+.news__more {
+  font-size: clamp(14px, 1.4vw, 20px);
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .courses__label,
+  .enrollment__label,
+  .certificate__label,
+  .news__label,
+  .courses__more,
+  .enrollment__more,
+  .certificate__more,
+  .news__more {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses__label,
+  .enrollment__label,
+  .certificate__label,
+  .news__label {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .courses__more,
+  .enrollment__more,
+  .certificate__more,
+  .news__more {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

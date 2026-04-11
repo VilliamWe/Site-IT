@@ -1,3 +1,8 @@
+.news {
+  position: relative;
+  overflow: hidden;
+}
+
 .news__container {
   position: relative;
 }
@@ -70,7 +75,7 @@
 }
 
 .news__watermark-bottom {
-  margin-left: 40px;
+    margin-left: 120px;
 }
 
 .news__glow {
@@ -483,13 +488,13 @@
 
 @media (min-width: 360px) and (max-width: 480px) {
   .news__watermark {
-        top: 220px;
-        left: auto;
-        right: 200px;
-        width: 360px;
-        font-size: 150px;
-        line-height: 180px;
-    }
+    top: 220px;
+    left: auto;
+    right: 200px;
+    width: 360px;
+    font-size: 150px;
+    line-height: 180px;
+  }
 
   .news__content {
     width: 100%;

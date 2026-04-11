@@ -3,17 +3,21 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 16px 0 0;
-  z-index: 100;
+  padding: 33px 202px 0 194px;
+  box-sizing: border-box;
+  z-index: 200;
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1524px;
+  width: 100%;
+  max-width: 1524px;
+  margin-inline: auto;
   height: 80px;
-  padding-right: 29px;
+  padding-right: clamp(18px, 2vw, 29px);
+  box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 1);
   border-radius: 49px;
   background: rgba(31, 31, 31, 0.38);
@@ -35,13 +39,16 @@
 
 .header__nav {
   flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
 }
 
 .nav__list {
   display: flex;
   align-items: center;
-  margin-left: 148px;
-  gap: 71px;
+  justify-content: center;
+  gap: clamp(18px, 2.8vw, 52px);
 }
 
 .nav__item {
@@ -59,7 +66,8 @@
   align-items: center;
   justify-content: center;
   min-height: 60px;
-  padding-inline: 18px;
+  padding-inline: 12px;
+  white-space: nowrap;
   color: #fff;
   font-size: clamp(14px, 0.8vw, 16px);
   font-weight: 400;
@@ -116,6 +124,7 @@
   justify-content: center;
   min-width: 161px;
   height: 43px;
+  flex-shrink: 0;
   background: linear-gradient(90deg, #67a6fb 0%, #3f10d2 100%);
   border-radius: 999px;
   color: rgba(255, 255, 255, 1);
@@ -168,24 +177,56 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
+@media (max-width: 1820px) {
+  .header {
+    padding: 20px 140px 0 124px;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header {
+    padding: 10px 10px 0 14px;
+    z-index: 100;
+  }
+}
+
 @media (max-width: 992px) {
   .header {
-    padding-top: 12px;
-    z-index: 100;
+    padding: 12px 20px 0;
+    z-index: 220;
   }
 
   .header__container {
     position: relative;
+    z-index: 230;
     width: 100%;
+    max-width: none;
     height: 72px;
     padding-right: 18px;
     border-radius: 36px;
+    background: rgba(31, 31, 31, 1);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .header__container::before {
+    position: absolute;
+    inset: 0;
+    z-index: 235;
+    content: "";
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: inherit;
+    background: rgba(31, 31, 31, 1);
+    pointer-events: none;
   }
 
   .header__logo {
     width: 132px;
     height: 70px;
     border-radius: 36px;
+    position: relative;
+    z-index: 240;
   }
 
   .header__logo-image {
@@ -195,18 +236,16 @@
 
   .header__nav {
     position: fixed;
-    top: 84px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 90;
+    inset: 0;
+    z-index: 210;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 100%;
-    min-height: calc(100dvh - 84px);
-    padding: 28px 20px 32px;
-    background-color: #1E1E1E;
+    width: 100vw;
+    min-height: 100dvh;
+    padding: 112px 20px 32px;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
     overflow-y: auto;
     opacity: 0;
     visibility: hidden;
@@ -309,26 +348,45 @@
 
   .burger {
     display: inline-flex;
+    position: relative;
+    z-index: 250;
   }
 }
 
 @media (max-width: 640px) {
   .header {
-    padding-top: 8px;
-    z-index: 100;
+    padding: 15px 20px 0;
+    z-index: 220;
   }
 
   .header__container {
     position: relative;
+    z-index: 230;
     height: 64px;
     padding-right: 14px;
     border-radius: 32px;
+    background: rgba(31, 31, 31, 1);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .header__container::before {
+    position: absolute;
+    inset: 0;
+    z-index: 235;
+    content: "";
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: inherit;
+    background: rgba(31, 31, 31, 1);
+    pointer-events: none;
   }
 
   .header__logo {
     width: 110px;
     height: 62px;
     border-radius: 32px;
+    position: relative;
+    z-index: 240;
   }
 
   .header__logo-image {
@@ -342,18 +400,16 @@
 
   .header__nav {
     position: fixed;
-    top: 72px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 90;
+    inset: 0;
+    z-index: 210;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 100%;
-    min-height: calc(100dvh - 72px);
-    padding: 24px 20px 32px;
-    background-color: #1E1E1E;
+    width: 100vw;
+    min-height: 100dvh;
+    padding: 96px 20px 32px;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
     overflow-y: auto;
     opacity: 0;
     visibility: hidden;
@@ -422,7 +478,7 @@
     width: 40px;
     height: 40px;
     position: relative;
-    z-index: 70;
+    z-index: 250;
   }
 
   .burger__line {

@@ -6,6 +6,10 @@
   --container-padding: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 320px;
   font-family: "Montserrat", Arial, sans-serif;
@@ -21,7 +25,7 @@ body.menu-open {
 .main {
   position: relative;
   overflow: hidden;
-  padding-top: 129px;
+  padding-top: 113px;
 }
 
 .main__glow {
@@ -42,9 +46,13 @@ body.menu-open {
   margin-inline: auto;
 }
 
+section[id] {
+  scroll-margin-top: 140px;
+}
+
 @media (max-width: 480px) {
   .main {
-    padding-top: 80px;
+    padding-top: 79px;
   }
 
   .main__glow {
