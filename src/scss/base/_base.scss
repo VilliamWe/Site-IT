@@ -18,6 +18,10 @@ body.menu-open {
   background-color: #1E1E1E;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .main {
   position: relative;
   overflow: hidden;

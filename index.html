@@ -40,7 +40,7 @@
           </div>
         </nav>
 
-        <a class="header__button" href="tel:+70000000000">Call us</a>
+        <button class="header__button" type="button" data-modal-open="training">Call us</button>
 
         <button class="burger" type="button" aria-label="Open menu" aria-expanded="false">
           <span class="burger__line"></span>
@@ -65,8 +65,10 @@
             </p>
 
             <div class="hero__actions">
-              <a class="hero__button hero__button--primary" href="#">About more</a>
-              <a class="hero__button hero__button--secondary" href="#">Choose a Course</a>
+              <button class="hero__button hero__button--primary" type="button" data-modal-open="training">About
+                more</button>
+              <button class="hero__button hero__button--secondary" type="button" data-modal-open="training">Choose a
+                Course</button>
             </div>
           </div>
 
@@ -177,7 +179,7 @@
                   Leave a request and we will help you choose the right course
                   and guide you through the details
                 </p>
-                <a class="enrollment__contact" href="#">Contact us</a>
+                <button class="enrollment__contact" type="button" data-modal-open="training">Contact us</button>
               </article>
 
               <a class="enrollment__view" href="#">
@@ -275,6 +277,52 @@
         </div>
       </section>
     </main>
+
+    <div class="modal" data-modal="training" aria-hidden="true">
+      <div class="modal__overlay" data-modal-close></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="training-modal-title">
+        <button class="modal__close" type="button" aria-label="Close modal" data-modal-close></button>
+
+        <h2 class="modal__title" id="training-modal-title">START TRAINING NOW</h2>
+        <p class="modal__text">
+          Fill out the form below and we will contact you shortly
+        </p>
+
+        <form class="modal__form" action="#" method="post">
+          <div class="modal__grid">
+            <label class="modal__field">
+              <span class="visually-hidden">Name</span>
+              <input class="modal__input" type="text" name="name" placeholder="Name" />
+            </label>
+
+            <label class="modal__field">
+              <span class="visually-hidden">E-mail</span>
+              <input class="modal__input" type="email" name="email" placeholder="E-mail" />
+            </label>
+
+            <label class="modal__field modal__field--wide">
+              <span class="visually-hidden">Phone</span>
+              <input class="modal__input" type="tel" name="phone" placeholder="Phone" />
+            </label>
+
+            <button class="modal__submit" type="submit">Submit an application</button>
+          </div>
+
+          <p class="modal__policy">
+            By clicking the button, I agree to the processing of personal data
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="cookie" data-cookie-banner>
+      <p class="cookie__text">
+        Мы используем файлы cookie для быстрой и удобной работы сайта. Используя наш сайт, Вы принимаете нашу
+        <a class="cookie__link" href="#">Политику использования файлов cookie</a>
+      </p>
+      <button class="cookie__accept" type="button" data-cookie-accept>Принять</button>
+      <button class="cookie__close" type="button" aria-label="Close cookie banner" data-cookie-close></button>
+    </div>
 
   </div>
 

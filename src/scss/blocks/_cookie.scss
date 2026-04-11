@@ -1,0 +1,103 @@
+.cookie {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  left: 24px;
+  z-index: 290;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: min(100% - 48px, 980px);
+  margin: 0 auto;
+  padding: 20px 24px;
+  border: 1px solid rgba(103, 166, 251, 1);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+}
+
+.cookie--hidden {
+  display: none;
+}
+
+.cookie__text {
+  flex: 1 1 auto;
+  color: rgba(73, 73, 73, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.cookie__link {
+  color: rgba(103, 166, 251, 1);
+  text-decoration: underline;
+}
+
+.cookie__accept {
+  flex-shrink: 0;
+  min-width: 180px;
+  min-height: 48px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(90deg, rgba(103, 166, 251, 1) 0%, rgba(103, 166, 251, 0.85) 100%);
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.cookie__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.cookie__close::before,
+.cookie__close::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 2px;
+  content: "";
+  background: rgba(103, 166, 251, 1);
+  border-radius: 999px;
+}
+
+.cookie__close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cookie__close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media (max-width: 640px) {
+  .cookie {
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    width: auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 18px 16px 16px;
+  }
+
+  .cookie__text {
+    font-size: 13px;
+  }
+
+  .cookie__accept {
+    width: 100%;
+    min-width: 0;
+  }
+}
