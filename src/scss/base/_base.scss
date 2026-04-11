@@ -18,7 +18,40 @@ body.menu-open {
   background-color: #1E1E1E;
 }
 
+.main {
+  position: relative;
+  overflow: hidden;
+  padding-top: 129px;
+}
+
+.main__glow {
+  position: absolute;
+  top: 1092px;
+  left: -395px;
+  width: 887px;
+  height: 887px;
+  border-radius: 50%;
+  background: rgba(103, 166, 251, 1);
+  filter: blur(200px);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .container {
   width: min(100% - (var(--container-padding) * 2), var(--container-width));
   margin-inline: auto;
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding-top: 80px;
+  }
+
+  .main__glow {
+    width: 520px;
+    height: 520px;
+    top: 980px;
+    left: -220px;
+    filter: blur(200px);
+  }
 }
