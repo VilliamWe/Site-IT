@@ -27,8 +27,10 @@
   transition: color 0.3s ease;
 }
 
-.certificate__more:hover {
-  color: #67a6fb;
+@media (hover: hover) and (pointer: fine) {
+  .certificate__more:hover {
+    color: #67a6fb;
+  }
 }
 
 .certificate__title {

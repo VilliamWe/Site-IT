@@ -57,8 +57,10 @@
   transition: color 0.3s ease;
 }
 
-.courses__more:hover {
-  color: #67a6fb;
+@media (hover: hover) and (pointer: fine) {
+  .courses__more:hover {
+    color: #67a6fb;
+  }
 }
 
 .courses__slider {

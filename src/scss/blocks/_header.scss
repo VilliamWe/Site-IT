@@ -87,9 +87,11 @@
   z-index: -1;
 }
 
-.nav__link:hover::before {
-  opacity: 1;
-  background: linear-gradient(90deg, #67a6fb 0%, #ffa2f4 100%);
+@media (hover: hover) and (pointer: fine) {
+  .nav__link:hover::before {
+    opacity: 1;
+    background: linear-gradient(90deg, #67a6fb 0%, #ffa2f4 100%);
+  }
 }
 
 .nav__link:active::before,

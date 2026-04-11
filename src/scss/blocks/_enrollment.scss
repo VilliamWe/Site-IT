@@ -32,8 +32,10 @@
   transition: color 0.3s ease;
 }
 
-.enrollment__more:hover {
-  color: #67a6fb;
+@media (hover: hover) and (pointer: fine) {
+  .enrollment__more:hover {
+    color: #67a6fb;
+  }
 }
 
 .enrollment__layout {
@@ -93,8 +95,10 @@
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-.enrollment__contact:hover {
-  background: linear-gradient(90deg, #67a6fb 0%, #3f10d2 100%);
+@media (hover: hover) and (pointer: fine) {
+  .enrollment__contact:hover {
+    background: linear-gradient(90deg, #67a6fb 0%, #3f10d2 100%);
+  }
 }
 
 .enrollment__contact:active {
@@ -102,10 +106,15 @@
 }
 
 .enrollment__contact--disabled,
-.enrollment__contact--disabled:hover,
 .enrollment__contact--disabled:active {
   background: #494949;
   pointer-events: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .enrollment__contact--disabled:hover {
+    background: #494949;
+  }
 }
 
 .enrollment__view {
@@ -145,8 +154,10 @@
   height: 45px;
 }
 
-.enrollment__view:hover {
-  background: linear-gradient(90deg, #67a6fb 0%, #3f10d2 100%);
+@media (hover: hover) and (pointer: fine) {
+  .enrollment__view:hover {
+    background: linear-gradient(90deg, #67a6fb 0%, #3f10d2 100%);
+  }
 }
 
 .enrollment__view:active {
@@ -154,10 +165,15 @@
 }
 
 .enrollment__view--disabled,
-.enrollment__view--disabled:hover,
 .enrollment__view--disabled:active {
   background: #494949;
   pointer-events: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .enrollment__view--disabled:hover {
+    background: #494949;
+  }
 }
 
 .enrollment__visual {

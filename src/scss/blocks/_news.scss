@@ -27,8 +27,10 @@
   transition: color 0.3s ease;
 }
 
-.news__more:hover {
-  color: #67a6fb;
+@media (hover: hover) and (pointer: fine) {
+  .news__more:hover {
+    color: #67a6fb;
+  }
 }
 
 .news__body {
@@ -127,9 +129,11 @@
     border-color 0.3s ease;
 }
 
-.news__button:hover {
-  background: linear-gradient(90deg, rgba(103, 166, 251, 1) 0%, rgba(255, 162, 244, 1) 100%);
-  color: #ffffff;
+@media (hover: hover) and (pointer: fine) {
+  .news__button:hover {
+    background: linear-gradient(90deg, rgba(103, 166, 251, 1) 0%, rgba(255, 162, 244, 1) 100%);
+    color: #ffffff;
+  }
 }
 
 .news__button:active {
@@ -206,8 +210,10 @@
   border-radius: 0;
 }
 
-.news__arrow:hover {
-  background: linear-gradient(90deg, rgba(103, 166, 251, 1) 0%, rgba(63, 16, 210, 1) 100%);
+@media (hover: hover) and (pointer: fine) {
+  .news__arrow:hover {
+    background: linear-gradient(90deg, rgba(103, 166, 251, 1) 0%, rgba(63, 16, 210, 1) 100%);
+  }
 }
 
 .news__arrow:active {
