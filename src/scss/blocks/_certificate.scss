@@ -1,0 +1,238 @@
+.certificate {
+  padding-top: clamp(48px, 6vw, 90px);
+  padding-bottom: clamp(48px, 6vw, 90px);
+}
+
+.certificate__container {
+  position: relative;
+}
+
+.certificate__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(18px, 3vw, 50px);
+}
+
+.certificate__label {
+  color: #ffffff;
+  font-size: clamp(14px, 1.8vw, 26px);
+  font-weight: 500;
+  line-height: 1.23;
+}
+
+.certificate__more {
+  font-size: clamp(14px, 1.4vw, 20px);
+  font-weight: 500;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.certificate__more:hover {
+  color: #67a6fb;
+}
+
+.certificate__title {
+  width: min(100%, 812px);
+  margin-bottom: clamp(12px, 1.5vw, 19px);
+  color: #ffffff;
+  font-size: clamp(24px, 2.8vw, 40px);
+  font-weight: 500;
+  line-height: 1.225;
+}
+
+.certificate__text {
+  width: min(100%, 812px);
+  margin-bottom: clamp(22px, 4vw, 54px);
+  color: #ffffff;
+  font-size: clamp(14px, 1.5vw, 22px);
+  font-weight: 500;
+  line-height: 1.23;
+}
+
+.certificate__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(12px, 1vw, 15px);
+}
+
+.certificate__image {
+  display: block;
+  width: 100%;
+  height: clamp(320px, 32vw, 464px);
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media (max-width: 1440px) {
+  .certificate__image {
+    height: 420px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .certificate {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  .certificate__head {
+    margin-bottom: 14px;
+  }
+
+  .certificate__label,
+  .certificate__more {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .certificate__title {
+    margin-bottom: 14px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .certificate__text {
+    margin-bottom: 38px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .certificate__grid {
+    display: flex;
+    grid-template-columns: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 18px;
+    padding-bottom: 4px;
+    scroll-snap-type: x proximity;
+  }
+
+  .certificate__image {
+    width: 342px;
+    min-width: 342px;
+    height: 520px;
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .certificate {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .certificate__label,
+  .certificate__more {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .certificate__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .certificate__text {
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .certificate__grid {
+    gap: 14px;
+  }
+
+  .certificate__image {
+    width: 320px;
+    min-width: 320px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .certificate__head {
+    margin-bottom: 12px;
+  }
+
+  .certificate__label,
+  .certificate__more {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .certificate__title {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .certificate__text {
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .certificate__grid {
+    gap: 16px;
+  }
+
+  .certificate__image {
+    width: 280px;
+    min-width: 280px;
+    height: auto;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .certificate {
+    padding-top: 60px;
+    padding-bottom: 44px;
+  }
+
+  .certificate__head {
+    margin-bottom: 40px;
+  }
+
+  .certificate__label {
+    width: 126px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .certificate__more {
+    width: 112px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .certificate__title {
+    width: 208px;
+    margin-bottom: 17px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .certificate__text {
+    width: 320px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .certificate__grid {
+    gap: 10px;
+  }
+
+  .certificate__image {
+    width: 320.63px;
+    min-width: 320.63px;
+    height: 435px;
+    border-radius: 18.75px;
+  }
+}
